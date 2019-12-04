@@ -17,7 +17,8 @@
     height: 100%;
     overflow: auto;
     background-color: $default-color;
-
+    z-index: 99999;
+    
     .header-modal {
       position: relative;
       min-height: 80px;
