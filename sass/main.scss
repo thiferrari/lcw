@@ -1,10 +1,13 @@
 @import '_layout/fonts';
 @import '_layout/colors';
+@import '_layout/mixin';
 @import '_layout/structure';
 @import '_layout/forms';
-@import '_layout/header-deslogado';
+@import '_layout/header_logoff';
 @import '_layout/home';
 @import '_layout/footer';
-@import '_layout/detalhe_hotel';
-@import '_layout/detalhe_oferta';
+@import '_layout/details_hotel';
+@import '_layout/details_hotel';
 @import '_layout/login';
+@import '_layout/list_hotels';
+

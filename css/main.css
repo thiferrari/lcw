@@ -1304,41 +1304,41 @@ footer .footer-copyright p {
   display: block;
 }
 
-#details-package .grid-details-packages {
+#details-package .grid-details {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 65% 35%;
-      grid-template-columns: 65% 35%;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   grid-auto-rows: auto;
   margin: 0 20px;
-  padding: 20px 0 0 0;
+  padding: 140px 0 0 0;
   grid-gap: 20px;
 }
 
 @media only screen and (max-width: 991px) {
-  #details-package .grid-details-packages {
+  #details-package .grid-details {
     -ms-grid-columns: 100% !important;
         grid-template-columns: 100% !important;
   }
 }
 
-#details-package .grid-details-packages .text-details h4 {
+#details-package .grid-details .text-details h4 {
   font-size: 44px;
   line-height: 1;
 }
 
-#details-package .grid-details-packages .text-details .subtitle {
+#details-package .grid-details .text-details .subtitle {
   font-size: 20px;
   line-height: 0.4;
   margin-bottom: 30px;
 }
 
-#details-package .grid-details-packages .text-details p {
+#details-package .grid-details .text-details p {
   text-transform: initial;
   padding: 0 120px 0 0;
 }
 
-#details-package .grid-details-packages .title-checklist {
+#details-package .grid-details .title-checklist {
   position: absolute;
   color: #ff1e25;
   background-color: #f6f3f3;
@@ -1347,30 +1347,17 @@ footer .footer-copyright p {
   border-bottom-right-radius: 40px;
 }
 
-#details-package .grid-details-packages .title-checklist span {
+#details-package .grid-details .title-checklist span {
   display: block;
   text-transform: initial;
   color: #000000;
 }
 
-#details-package .grid-details-packages .text-checklist {
-  margin-top: 120px;
-  margin-left: 20px;
-  line-height: 0.8;
-}
-
-#details-package .grid-details-packages .content-check {
-  width: 100%;
-  padding: 0 20px;
-  border-top: solid 1px #dedede;
-  border-bottom: solid 1px #dedede;
-  padding: 15px;
-}
-
-#details-package .grid-details-packages .sidebar-details .content-img-details {
+#details-package .grid-details .sidebar-details .content-img-details {
   border-radius: 40px;
-  width: 380px;
-  height: 500px;
+  width: 100%;
+  min-width: 380px;
+  height: 400px;
   background-color: red;
   overflow: hidden;
   position: relative;
@@ -1378,28 +1365,28 @@ footer .footer-copyright p {
 }
 
 @media only screen and (max-width: 991px) {
-  #details-package .grid-details-packages .sidebar-details .content-img-details {
+  #details-package .grid-details .sidebar-details .content-img-details {
     width: 100%;
     min-width: 280px;
   }
 }
 
-#details-package .grid-details-packages .sidebar-details .content-img-details img {
+#details-package .grid-details .sidebar-details .content-img-details img {
   position: absolute;
   margin: 0 auto;
   left: -100px;
 }
 
-#details-package .grid-details-packages .sidebar-details .content-img-details span {
+#details-package .grid-details .sidebar-details .content-img-details span {
   color: #ffffff;
 }
 
-#details-package .grid-details-packages .sidebar-details .content-img-details .content-text-details {
+#details-package .grid-details .sidebar-details .content-img-details .content-text-details {
   position: relative;
   top: 360px;
 }
 
-#details-package .grid-details-packages .sidebar-details .content-img-details .content-text-details .see-more {
+#details-package .grid-details .sidebar-details .content-img-details .content-text-details .see-more {
   font-size: 30px;
   display: block;
   position: absolute;
@@ -1407,7 +1394,7 @@ footer .footer-copyright p {
   left: 20px;
 }
 
-#details-package .grid-details-packages .sidebar-details .content-img-details .content-text-details .text-see-more {
+#details-package .grid-details .sidebar-details .content-img-details .content-text-details .text-see-more {
   font-size: 24px;
   display: block;
   text-transform: initial;
@@ -1417,19 +1404,19 @@ footer .footer-copyright p {
   padding: 0 120px 0 0;
 }
 
-#details-package .grid-details-packages .sidebar-details .content-value {
+#details-package .grid-details .sidebar-details .content-value {
   padding: 20px 0;
   display: block;
   min-height: 100px;
 }
 
-#details-package .grid-details-packages .sidebar-details .content-value .text-total {
+#details-package .grid-details .sidebar-details .content-value .text-total {
   font-size: 32px;
   color: #ff1e25;
   float: left;
 }
 
-#details-package .grid-details-packages .sidebar-details .content-value .text-value {
+#details-package .grid-details .sidebar-details .content-value .text-value {
   font-size: 28px;
   color: #000000;
   float: right;
@@ -1592,8 +1579,8 @@ footer .footer-copyright p {
 .container-login {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   grid-auto-rows: auto;
   margin: 0 40px;
   grid-gap: 40px;
@@ -1603,6 +1590,7 @@ footer .footer-copyright p {
   .container-login {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+    margin: 0;
   }
 }
 
@@ -1630,8 +1618,74 @@ footer .footer-copyright p {
   display: block;
 }
 
+@media (max-width: 991px) {
+  .container-login .content-text .container-text {
+    padding: 120px 100px 0 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container-login .content-text {
+    margin: 15px 0;
+  }
+}
+
 .container-login .content-form {
   border-radius: 50%;
   background-color: #f6f3f3;
-  padding: 100px;
+  padding: 125px;
+}
+
+.container-login .content-form .simple-login-container label {
+  color: #495057;
+  margin: 0 0 0 30px;
+}
+
+.container-login .content-form .simple-login-container #password:after {
+  color: #fff;
+  background: blue;
+  top: 20px;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.container-login .content-form .simple-login-container .btn-login {
+  max-width: 220px;
+}
+
+.container-login .content-form .simple-login-container .forgot-password {
+  text-align: center;
+  margin: -10px 0 20px 0;
+}
+
+.container-login .content-form .simple-login-container .forgot-password .btn-forgot-password {
+  font-size: 14px;
+  color: #495057;
+  text-transform: initial;
+}
+
+.container-login .content-form .simple-login-container .forgot-password .btn-forgot-password:hover {
+  text-decoration: underline;
+}
+
+.container-login .content-form .simple-login-container .login-in {
+  text-align: center;
+  margin: -10px 0 20px 0;
+}
+
+.container-login .content-form .simple-login-container .login-in .text-login-in {
+  color: #495057;
+  text-transform: initial;
+}
+
+.container-login .content-form .simple-login-container .login-in .text-login-in a {
+  color: #ff1e25;
+}
+
+@media (max-width: 991px) {
+  .container-login .content-form {
+    border-radius: 40px;
+    padding: 20px;
+  }
 }

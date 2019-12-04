@@ -1,12 +1,13 @@
 .container-login {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
     grid-auto-rows: auto ;
     margin: 0 40px ;
     grid-gap: 40px; 
 
     @media only screen and (max-width: 991px) {
         grid-template-columns: 100%;
+        margin: 0;
     }
     .content-text {
         @include center-flex; 
@@ -19,12 +20,68 @@
         .container-text {
             padding: 50px 100px 0 60px;
             display: block;
+            @media (max-width: 991px) {
+                padding: 120px 100px 0 50px;
+            }
+        }
+        @media (max-width: 991px) {
+            margin: 15px 0;
+
         }
     }
     .content-form {
         border-radius: 50%;
         background-color: $second-color;
-        padding: 100px;
-    }
+        padding: 125px;
 
+
+        .simple-login-container {
+            label {
+                color:$gray;
+                margin: 0 0 0 30px; 
+            } 
+            #password {
+
+                &:after {
+                    color: #fff;
+                    background: blue;
+                    top: 20px;
+                    position: relative;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+            .btn-login {
+                max-width: 220px;
+            }
+            .forgot-password {
+                text-align: center;
+                margin:-10px 0 20px 0;
+       
+                .btn-forgot-password {
+                    font-size: 14px;
+                    color:$gray;
+                    text-transform: initial;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .login-in {
+                text-align: center;
+                margin:-10px 0 20px 0;
+                .text-login-in {
+                    color:$gray;
+                    text-transform: initial;
+                    a {
+                        color:$primary-color;
+                    }
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            border-radius: 40px;
+            padding: 20px;
+        }
+    }
 }

@@ -54,25 +54,25 @@
           <div class="simple-login-container">
               <div class="row">
                   <div class="col-md-12 form-group">
-                    <label>E-mail</label>
-                      <input type="text" class="form-control" placeholder="Username">
+                    <label>E-mail:</label>
+                      <input type="text" class="form-control" placeholder="seuemail@dominio.com.br">
                   </div>
               </div>
               <div class="row">
                   <div class="col-md-12 form-group">
-                      <label>Senha</label>
-                      <input type="password" placeholder="Enter your Password" class="form-control">
+                      <label>Senha:</label>
+                      <input type="password" id="password" placeholder="********" class="form-control">
                   </div>
               </div>
               <div class="row">
-                  <div class="col-md-12 form-group">
-                      <a href="#" class="">Esqueci minha senha</a>
+                  <div class="col-md-12 form-group forgot-password">
+                      <a href="#" class="btn-forgot-password">esqueci minha senha :(</a>
                   </div>
                   <div class="col-md-12 form-group">
-                      <a href="#" class="btn">Acessar</a>
+                      <a href="#" class="btn btn-login">Acessar</a>
                   </div>
-                  <div class="col-md-12 form-group">
-                      <span>Não tem cadastro?<a href="#" class=""></a> Clique aqui</a></span>
+                  <div class="col-md-12 form-group login-in">
+                      <span class="text-login-in">Não tem cadastro? <a href="#" class="">Clique aqui</a></span>
                   </div>
               </div>
           </div>
@@ -127,43 +127,22 @@
   <script src="js/functions.js"></script>
 
   <script>
-      function openModal() {
-        document.getElementById("myModal").style.display = "block";
-      }
-      
-      function closeModal() {
-        document.getElementById("myModal").style.display = "none";
-      }
-      
-      var slideIndex = 1;
-      showSlides(slideIndex);
-      
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
+    var senha = $('#password');
+    var olho= $("#olho");
+
+    olho.mousedown(function() {
+      senha.attr("type", "text");
+    });
+
+    olho.mouseup(function() {
+      senha.attr("type", "password");
+    });
+    // para evitar o problema de arrastar a imagem e a senha continuar exposta, 
+    //citada pelo nosso amigo nos comentários
+    $( "#olho" ).mouseout(function() { 
+      $("#password").attr("type", "password");
+    });
+  </script>
 </body>
 
 </html>
