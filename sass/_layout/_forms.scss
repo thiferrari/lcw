@@ -1,0 +1,65 @@
+.form-control:focus {
+    border-color: $primary-color-lighter ; 
+}
+
+
+.header-search {
+    input {
+        border: 2px solid $primary-color-lighter;
+        border-radius: 40px;
+        padding:5px 20px;
+        height: 60px;
+        font-size:20px;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+    button {
+        font-size:20px;
+        height: 60px;
+        color: $default-color;
+        background-color: $primary-color-lighter;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        padding: 0 40px;
+        text-transform: uppercase;
+        &:hover {
+            color: $default-color;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.home-custom-packages {
+    input {
+        width: 56%;
+        border: 2px solid $primary-color-lighter;
+        border-radius: 40px;
+        padding:5px 20px;
+        height: 60px;
+        font-size:20px;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin: 0 20px;
+        text-transform: initial;
+
+    }
+    button {
+        font-size:20px;
+        height: 60px;
+        color: $default-color;
+        background-color: $primary-color;
+        border-radius: 40px;
+        padding: 0 40px;
+        text-transform: uppercase;
+        border: none;
+        margin: 0 20px;
+
+        &:hover {
+            color: $default-color;
+            background-color: $primary-color;
+        }
+    }
+}
+
