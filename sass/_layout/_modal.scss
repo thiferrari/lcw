@@ -24,7 +24,7 @@
       margin-bottom: 30px;
       background-color: $second-color;
       .title-modal {
-          position: absolute;
+        position: absolute;
         color: $default-color;
         background-color: $primary-color;
         padding: 15px 55px 15px 20px;
@@ -32,7 +32,15 @@
         border-bottom-right-radius: 40px;
         top: -20px;
         left: 8%;
-        }
+      }
+      .subtitle-modal {
+        position: absolute;
+        color: $main-color;
+        top: 25px;
+        right: 8%;
+        text-transform: initial;
+    
+      }
     }
 
     /* Modal Content */
@@ -117,11 +125,11 @@
     
     .caption-container {
       text-align: center;
-      background-color: black;
+      background-color:$default-color;
       padding: 2px 16px;
-      color: white;
+
     }
-    
+
     .demo {
       opacity: 0.6;
     }

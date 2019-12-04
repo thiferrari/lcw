@@ -1017,6 +1017,14 @@ footer .footer-copyright p {
   left: 8%;
 }
 
+.modal .header-modal .subtitle-modal {
+  position: absolute;
+  color: #000000;
+  top: 25px;
+  right: 8%;
+  text-transform: initial;
+}
+
 .modal .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -1095,9 +1103,8 @@ footer .footer-copyright p {
 
 .modal .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: #ffffff;
   padding: 2px 16px;
-  color: white;
 }
 
 .modal .demo {
