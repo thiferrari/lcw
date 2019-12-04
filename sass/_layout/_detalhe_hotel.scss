@@ -1,5 +1,5 @@
 // HEADER //
-#details-hotel {
+#details-package {
     header {
 
         .container-header-internal{
@@ -101,12 +101,12 @@
         background-color: #c8c8c8;
         display: block;
     }
-    .grid-details-packages {
+    .grid-details {
         display: grid;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 40% 60%;
         grid-auto-rows: auto;
         margin: 0 20px;
-        padding: 20px 0 0 0;
+        padding: 140px 0 0 0;
         grid-gap: 20px;
 
         @media only screen and (max-width: 991px) {
@@ -141,24 +141,13 @@
             }
 
         }
-        .text-checklist {
-            margin-top: 120px;
-            margin-left: 20px;
-            line-height: 0.8;
-        }
-        .content-check {
-            width: 100%;
-            padding: 0 20px;
-            border-top: solid 1px $second-color-variant;
-            border-bottom: solid 1px $second-color-variant;
-            padding: 15px;
  
-        }
         .sidebar-details {
             .content-img-details {
                 border-radius: 40px;
-                width:380px;
-                height: 500px;
+                width: 100%;
+                min-width:380px;
+                height: 400px;
                 background-color: red; 
                 overflow: hidden;
                 position: relative;
