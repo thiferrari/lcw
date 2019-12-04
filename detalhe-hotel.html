@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LCW</title>
+
+ 
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/animate.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body id="details-package">
+
+  <header>
+    <div class="container">
+      <div class="header-nav">
+        <a href="#" class="navbar-brand">Low coast works</a>
+        <nav class="link-login">
+          <ul>
+            <li><a href="#" class="btn-login">Entrar</a></li>
+          </u>
+        </nav>
+
+      </div>
+    </div>
+
+    <div class="container-header-internal">
+      <div class="header-full-internal">
+        <div class="header-search container">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="NOME DO HOSTEL / HOTEL / POUSADA">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Pesquisar</button>
+            </span>
+          </div><!-- /input-group -->
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class="container">
+
+    <section class="home-custom-packages">
+        <h3>Detalhes das Ofertas</h3>
+        <div class="grid-box">
+            <div class="content-packages">
+              <div class="box-packages">
+                  <div class="text-container">
+                      <img src="/img/packages-home-logo-1.png" alt="" title="" class="img-logo">
+                      <span class="text02">Texto 02</span>
+                  </div>
+                  <img src="/img/packages-home-img.jpg" alt="" title="" class="img-bg-packages">
+
+                </div>
+                <span class="title-packages">Oferta Orlando</span>
+
+            </div>
+            <div class="content-packages active-packages">
+              <div class="box-packages">
+                  <div class="text-container">
+                      <img src="/img/packages-home-logo-2.png" alt="" title="" class="img-logo">
+                      <span class="text02">Texto 02</span>
+                  </div>
+                  <img src="/img/packages-home-img.jpg" alt="" title="" class="img-bg-packages">
+
+                </div>
+                <div class="title-packages">Ofertas Orlando</div>
+
+             </div>
+            <div class="content-packages">
+              <div class="box-packages">
+                  <div class="text-container">
+                      <img src="/img/packages-home-logo-3.png" alt="" title="" class="img-logo">
+                      <span class="text02">Texto 02</span>
+                  </div>
+                  <img src="/img/packages-home-img.jpg" alt="" title="" class="img-bg-packages">
+
+                </div>
+                <div class="title-packages">Ofertas Orlando</div>
+            </div>
+
+        </div>
+    </section>
+    <div class="hr"></div>
+    <section class="grid-details-packages">
+       <div class="text-details">
+          <h4>Orlando - flórida</h4>
+          <div class="subtitle">7 NOITES | 2 ADULTOS</div>
+          <p>Apartamento completo com sala, cozinha completa ou parcial e quarto privativo. Acomodação de 4 adultos.</p>
+
+          <p>Válido para todo ano exceto: Reveillon, natal, semana santa, thanks giving, independence day e president day.</p>
+          
+          <p>Prazo da reserva após a compra: 10 meses.</p>
+          <span class="title-checklist">
+            Checklist
+            <span >detalhes do que está incluso na promoção</span>
+          </span>
+          <div class="text-checklist">
+              <p>8 dias | 7 noites;</p>
+              <p>Apartamento para 4 adultos;</p>
+              <p>Check-in: Sexta, sábado ou domingo;</p> 
+              <p>De acordo com a disponibilidade</p>
+              <p>Reservas o ano todo com exceção</p>
+              <p>Deposito de garantia será cobrado no momento do check-in;</p>
+              <p>Resorts amenities/taxa de limpeza varia de acordo </p>
+              <p>Idade mínima do check-in: 21 anos;</p>
+              <p><strong>Check-in: 16h00</strong></p>
+              <p><strong>Check-out: 10h00</strong></p>
+
+          </div>
+          <div class="content-check">
+            <div class="checkbox">
+              <input type="checkbox" id="a" checked>
+              <label for="a"></label>
+              <span>Sim, estou ciente das informações</span>
+            </div>
+          </div>
+       </div>
+       <div class="sidebar-details">
+        <div class="content-img-details">
+          <a href="#">
+            <img src="/img/gallery-details-img.jpg" alt="" title="" class="img-bg-packages" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <div class="content-text-details">
+              <span class="see-more">Veja mais</span>
+              <span class="text-see-more">Clique aqui para ir para a galeria de fotos!</span>
+            </div>
+          </a>
+        </div>
+        <div class="content-value">
+          <span class="text-total">Total</span>
+          <span class="text-value">R$ 8.000,00</span>
+        </div>
+        <a href="#" class="btn btn-purchase">Comprar esta oferta</a>
+       </div>
+    </section>
+    <a href="#" class="btn-prev">voltar</a>
+  </div>
+
+  <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="header-modal">
+        <span class="title-modal">Galeria de fotos</span>
+        <span class="subtitle-modal">Você está na galeria de fotos de</span>
+      </div>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="/img/gallery/img_lights_wide.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="/img/gallery/img_mountains_wide.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="/img/gallery/img_nature_wide.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="/img/gallery/img_snow_wide.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        <div class="content-miniatures">
+          <div class="column">
+            <img class="demo cursor" src="/img/gallery/img_lights_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/gallery/img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/gallery/img_nature_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="/img/gallery/img_snow_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  <footer class="footer-area">
+    <div class="container">
+        <div class="footer-container">
+          <div class="footer-links">
+              <ul>
+                  <li><a href="#">A Empresa</a></li>
+                  <li><a href="#">Politica de Privacidade</a></li>
+                  <li><a href="#">Termos e condições de uso</a></li>
+                  <li><a href="#">Fale Conosco</a></li>
+                </ul>
+          </div>
+          <div class="footer-payment">
+            <h4>Formas de pagamento</h4>
+            <img src="/img/payments-cards-footer.png"  class="img-fluid"alt="">
+          </div>
+          <div class="footer-social">
+            <h4>Site Seguro</h4>
+
+            <ul class="icons-social">
+              <li><a href="#"><i class="icon if icon-001-facebook"></i></a></li>
+              <li><a href="#"><i class="icon if icon-011-instagram"></i></a></li>
+              <li><a href="#"><i class="icon if icon-008-youtube"></i></a></li>
+              <li><a href="#"><i class="icon if icon-013-twitter-1"></i></a></li>
+              <li><a href="#"><i class="icon if icon-003-whatsapp"></i></a></li>
+
+            </ul>
+          </div>
+
+        </div>
+
+    </div>
+    <div class="footer-copyright">
+      <p>
+        Operadora e Agência de Viagens CNPJ: 00.000.000/0001-10 Rua Lorem Ipsum, 000 - Lorem Ipsum - SP - CEP: 00000-000
+      </p>
+    </div>
+  </footer>
+ 
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/functions.js"></script>
+
+  <script>
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+</body>
+
+</html>
