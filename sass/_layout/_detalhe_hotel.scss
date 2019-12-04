@@ -1,5 +1,5 @@
 // HEADER //
-#details-package {
+#details-hotel {
     header {
 
         .container-header-internal{
@@ -103,13 +103,15 @@
     }
     .grid-details-packages {
         display: grid;
-        -ms-grid-columns: (1fr)[2];
         grid-template-columns: 65% 35%;
         grid-auto-rows: auto;
         margin: 0 20px;
         padding: 20px 0 0 0;
         grid-gap: 20px;
 
+        @media only screen and (max-width: 991px) {
+            grid-template-columns: 100%!important;
+        }
         .text-details {
             h4 {
                 font-size:44px;
@@ -160,6 +162,12 @@
                 background-color: red; 
                 overflow: hidden;
                 position: relative;
+                margin: 0 auto;
+                @media only screen and (max-width: 991px) {
+                    width: 100%;
+                    min-width:280px;
+                }
+                
                 img {
                     position: absolute;
                     margin: 0 auto;
