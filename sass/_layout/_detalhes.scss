@@ -110,6 +110,15 @@
         grid-gap: 20px;
 
         .text-details {
+            h4 {
+                font-size:44px;
+                line-height: 1;
+            }
+            .subtitle {
+                font-size:20px;
+                line-height: 0.4;
+                margin-bottom: 30px;
+            }
             p {
                 text-transform: initial;
                 padding: 0 120px 0 0;
@@ -137,85 +146,10 @@
         .content-check {
             width: 100%;
             padding: 0 20px;
-            border-top: solid 1px $second-color;
-            border-bottom: solid 1px $second-color;
-
-             
-            $checkbox-diameter: 20px;
-            $checkbox-bg: $second-color;
-            $checkbox-bg-selected: $main-color;
-            $checkbox-tick: $main-color;
-            .checkbox {
-                position: relative;
-                
-                // circle
-                label {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: $checkbox-diameter;
-                    height: $checkbox-diameter;
-                    background-color: $checkbox-bg;
-                    border: 1px solid $checkbox-bg;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    transition: 
-                        background-color 300ms ease, 
-                        colour 300ms ease,
-                        box-shadow 300ms ease;
-                    
-                    // tick
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        top: 28%;
-                        left: 30%;
-                        width: 45%;
-                        height: 25%;
-                        opacity: 0;
-                        border-left: 2px solid $checkbox-tick;
-                        border-bottom: 2px solid $checkbox-tick;
-                        transform: rotate(-45deg);
-                        transition: opacity 300ms ease;
-                    }
-                }
-                
-                input {
-                    visibility: hidden;
-                    
-                    // selected state bg
-                    &:checked + label {
-                        background-color: $checkbox-bg-selected;
-                        border-color: $checkbox-bg-selected;
-                        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-                        
-                        // selected state tick
-                        &:after {
-                            opacity: 1;
-                        }
-                    }
-                }
-                
-                // demo colours
-                $colours: (
-                    1:	(bg: #356cd2),
-                    2:	(bg: #edaa2c),
-                    3:	(bg: #1dbf26),
-                    4:	(bg: #ed482c),
-                    5:	(bg: #ed2c83)
-                );
-                
-                @each $i, $j in $colours {
-                    &:nth-child(#{$i}) {
-                        input {
-                            &:checked + label {
-                                background-color: (map-get($j, 'bg'));
-                                border-color: (map-get($j, 'bg'));
-                            }
-                        }
-                    }
-                }
-            }
+            border-top: solid 1px $second-color-variant;
+            border-bottom: solid 1px $second-color-variant;
+            padding: 15px;
+ 
         }
         .sidebar-details {
             .content-img-details {
@@ -253,6 +187,21 @@
                         left: 20px;
                         padding: 0 120px 0 0;
                     }
+                }
+            }
+            .content-value {
+                padding: 20px 0;
+                display: block;
+                min-height: 100px;
+                .text-total {
+                    font-size: 32px;
+                    color:$primary-color;
+                    float:left;
+                }
+                .text-value {
+                    font-size: 28px;
+                    color:$main-color;
+                    float: right;
                 }
             }
         }

@@ -215,6 +215,21 @@ h3 {
   }
 }
 
+.btn {
+  color: #ffffff;
+  background-color: #ff1e25;
+  padding: 10px 40px;
+  border-radius: 40px;
+  font-size: 23px;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #eb5757;
+}
+
 .form-control:focus {
   border-color: #eb5757;
 }
@@ -275,6 +290,86 @@ h3 {
 .home-custom-packages button:hover {
   color: #ffffff;
   background-color: #ff1e25;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #eb5757;
+  border: 1px solid #eb5757;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 300ms ease,  colour 300ms ease, -webkit-box-shadow 300ms ease;
+  transition: background-color 300ms ease,  colour 300ms ease, -webkit-box-shadow 300ms ease;
+  transition: background-color 300ms ease,  colour 300ms ease, box-shadow 300ms ease;
+  transition: background-color 300ms ease,  colour 300ms ease, box-shadow 300ms ease,  -webkit-box-shadow 300ms ease;
+}
+
+.checkbox label:after {
+  content: '';
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  width: 45%;
+  height: 25%;
+  opacity: 0;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.checkbox input {
+  visibility: hidden;
+}
+
+.checkbox input:checked + label {
+  background-color: #000000;
+  border-color: #000000;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.checkbox input:checked + label:after {
+  opacity: 1;
+}
+
+.checkbox span {
+  margin-left: 15px;
+}
+
+.checkbox:nth-child(1) input:checked + label {
+  background-color: #ff1e25;
+  border-color: #ff1e25;
+}
+
+.checkbox:nth-child(2) input:checked + label {
+  background-color: #edaa2c;
+  border-color: #edaa2c;
+}
+
+.checkbox:nth-child(3) input:checked + label {
+  background-color: #1dbf26;
+  border-color: #1dbf26;
+}
+
+.checkbox:nth-child(4) input:checked + label {
+  background-color: #ed482c;
+  border-color: #ed482c;
+}
+
+.checkbox:nth-child(5) input:checked + label {
+  background-color: #ed2c83;
+  border-color: #ed2c83;
 }
 
 header {
@@ -822,6 +917,17 @@ footer .footer-copyright p {
   grid-gap: 20px;
 }
 
+#details-package .grid-details-packages .text-details h4 {
+  font-size: 44px;
+  line-height: 1;
+}
+
+#details-package .grid-details-packages .text-details .subtitle {
+  font-size: 20px;
+  line-height: 0.4;
+  margin-bottom: 30px;
+}
+
 #details-package .grid-details-packages .text-details p {
   text-transform: initial;
   padding: 0 120px 0 0;
@@ -851,84 +957,9 @@ footer .footer-copyright p {
 #details-package .grid-details-packages .content-check {
   width: 100%;
   padding: 0 20px;
-  border-top: solid 1px #f6f3f3;
-  border-bottom: solid 1px #f6f3f3;
-}
-
-#details-package .grid-details-packages .content-check .checkbox {
-  position: relative;
-}
-
-#details-package .grid-details-packages .content-check .checkbox label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: #f6f3f3;
-  border: 1px solid #f6f3f3;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: background-color 300ms ease,  colour 300ms ease, -webkit-box-shadow 300ms ease;
-  transition: background-color 300ms ease,  colour 300ms ease, -webkit-box-shadow 300ms ease;
-  transition: background-color 300ms ease,  colour 300ms ease, box-shadow 300ms ease;
-  transition: background-color 300ms ease,  colour 300ms ease, box-shadow 300ms ease,  -webkit-box-shadow 300ms ease;
-}
-
-#details-package .grid-details-packages .content-check .checkbox label:after {
-  content: '';
-  position: absolute;
-  top: 28%;
-  left: 30%;
-  width: 45%;
-  height: 25%;
-  opacity: 0;
-  border-left: 2px solid #000000;
-  border-bottom: 2px solid #000000;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: opacity 300ms ease;
-  transition: opacity 300ms ease;
-}
-
-#details-package .grid-details-packages .content-check .checkbox input {
-  visibility: hidden;
-}
-
-#details-package .grid-details-packages .content-check .checkbox input:checked + label {
-  background-color: #000000;
-  border-color: #000000;
-  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.4);
-}
-
-#details-package .grid-details-packages .content-check .checkbox input:checked + label:after {
-  opacity: 1;
-}
-
-#details-package .grid-details-packages .content-check .checkbox:nth-child(1) input:checked + label {
-  background-color: #356cd2;
-  border-color: #356cd2;
-}
-
-#details-package .grid-details-packages .content-check .checkbox:nth-child(2) input:checked + label {
-  background-color: #edaa2c;
-  border-color: #edaa2c;
-}
-
-#details-package .grid-details-packages .content-check .checkbox:nth-child(3) input:checked + label {
-  background-color: #1dbf26;
-  border-color: #1dbf26;
-}
-
-#details-package .grid-details-packages .content-check .checkbox:nth-child(4) input:checked + label {
-  background-color: #ed482c;
-  border-color: #ed482c;
-}
-
-#details-package .grid-details-packages .content-check .checkbox:nth-child(5) input:checked + label {
-  background-color: #ed2c83;
-  border-color: #ed2c83;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+  padding: 15px;
 }
 
 #details-package .grid-details-packages .sidebar-details .content-img-details {
@@ -971,6 +1002,24 @@ footer .footer-copyright p {
   top: 40px;
   left: 20px;
   padding: 0 120px 0 0;
+}
+
+#details-package .grid-details-packages .sidebar-details .content-value {
+  padding: 20px 0;
+  display: block;
+  min-height: 100px;
+}
+
+#details-package .grid-details-packages .sidebar-details .content-value .text-total {
+  font-size: 32px;
+  color: #ff1e25;
+  float: left;
+}
+
+#details-package .grid-details-packages .sidebar-details .content-value .text-value {
+  font-size: 28px;
+  color: #000000;
+  float: right;
 }
 
 /* Create four equal columns that floats next to eachother */
