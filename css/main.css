@@ -2108,3 +2108,138 @@ footer .footer-copyright p {
     float: initial;
   }
 }
+
+#confirmed-purchase .box-purchase-data {
+  background-color: #f6f3f3;
+  height: 130px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  #confirmed-purchase .box-purchase-data {
+    min-height: 230px;
+  }
+}
+
+#confirmed-purchase .box-purchase-data header {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+#confirmed-purchase .box-purchase-data header .text-title {
+  float: right;
+  display: block;
+  width: 45%;
+  padding: 30px;
+  text-align: right;
+  text-transform: initial;
+}
+
+@media only screen and (max-width: 767px) {
+  #confirmed-purchase .box-purchase-data header .text-title {
+    float: initial;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+  }
+}
+
+#confirmed-purchase .box-congratulations {
+  max-width: 60%;
+  width: 100%;
+  padding: 0 0 0 50px;
+  display: block;
+  margin: 80px auto;
+  position: relative;
+  text-transform: initial;
+}
+
+#confirmed-purchase .box-congratulations .title {
+  font-size: 44px;
+  color: #ff1e25;
+  padding: 0;
+  line-height: 0.5;
+}
+
+#confirmed-purchase .box-congratulations .subtitle {
+  font-size: 32px;
+  color: #495057;
+}
+
+#confirmed-purchase .box-congratulations p {
+  padding: 20px 140px 0 0;
+}
+
+#confirmed-purchase .box-congratulations p strong {
+  color: #ff1e25;
+}
+
+#confirmed-purchase .box-congratulations:before {
+  content: '\0054';
+  font-size: 80px;
+  color: #ff1e25;
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#confirmed-purchase .content-instructions {
+  padding-top: 100px;
+}
+
+#confirmed-purchase .content-instructions .itens {
+  text-align: center;
+}
+
+#confirmed-purchase .content-instructions .itens .icon {
+  color: #ff1e25;
+  font-size: 48px;
+  display: block;
+  text-align: center;
+}
+
+#confirmed-purchase .content-instructions .itens p {
+  text-transform: initial;
+  padding: 20px 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  #confirmed-purchase .content-instructions .itens p {
+    padding: 20px 20px;
+  }
+}
+
+#confirmed-purchase .text-call-center {
+  width: 65%;
+  padding: 10px;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #ff1e25;
+  display: block;
+  margin: 20px auto;
+  border-radius: 40px;
+  text-align: center;
+}
+
+#confirmed-purchase .text-call-center i {
+  margin-right: 20px;
+}
