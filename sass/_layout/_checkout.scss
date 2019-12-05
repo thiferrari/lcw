@@ -5,6 +5,7 @@
     }
     input {
         height: 50px;
+        padding: 0 25px;
         border-radius:40px;
         box-shadow: inset 0 1px 4px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
         border: 1px solid transparent;
@@ -83,11 +84,21 @@
                 }
 
                 .content-itens-resume {
+                    margin-top: 20px;
                     .title-resume {
                         width: 100%;
                         color: $primary-color;
                         padding: 10px 20px;
                         background-color: $second-color;
+                    }
+                    .form-row {
+                        padding: 0 20px;
+                        label {
+                            text-transform: initial;
+                        }
+                        input {
+                            height: 30px;
+                        }
                     }
                 }
 
