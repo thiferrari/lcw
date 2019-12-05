@@ -1942,7 +1942,6 @@ header .container-banners .header-search {
 
 #checkout input {
   height: 50px;
-  margin: 0 20px;
   border-radius: 40px;
   -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
           box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
@@ -1977,7 +1976,78 @@ header .container-banners .header-search {
 
 #checkout .form-data {
   width: 60%;
-  margin: 0 auto;
+  margin: 65px auto 50px auto;
+}
+
+#checkout .box-booking-data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  grid-auto-rows: auto;
+  padding: 120px 0 0 0;
+  margin: 0 40px;
+  grid-gap: 40px;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion {
+  height: 550px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
+  box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  padding: 2px;
+  position: relative;
+  border: 2px solid #ff1e25;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .img-container {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 50%;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .img-container img {
+  width: 100%;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .text-container {
+  margin-top: 25px;
+  padding: 15px 50px 0 25px;
+  line-height: 1;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .text-container header {
+  font-size: 1.7777777777777777rem;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .text-container .header-subtitle {
+  display: block;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .content-itens-resume .title-resume {
+  width: 100%;
+  color: #ff1e25;
+  padding: 10px 20px;
+  background-color: #f6f3f3;
+}
+
+#checkout .box-booking-data .data-banks .content-check {
+  width: 100%;
+  padding: 0 20px;
+  border-top: solid 1px #dedede;
+  border-bottom: solid 1px #dedede;
+  padding: 15px;
+}
+
+#checkout .box-booking-data .data-banks .content-check input {
+  height: initial;
 }
 
 /* Create four equal columns that floats next to eachother */

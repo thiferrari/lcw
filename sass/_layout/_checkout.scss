@@ -5,11 +5,9 @@
     }
     input {
         height: 50px;
-        margin: 0 20px;
         border-radius:40px;
         box-shadow: inset 0 1px 4px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
         border: 1px solid transparent;
-
     }
 
     .header-checkout {
@@ -37,6 +35,81 @@
     }
     .form-data {
         width: 60%;
-        margin: 0 auto;
+        margin: 65px auto 50px auto;
+    }
+    .box-booking-data {
+
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-auto-rows: auto;
+        padding: 120px 0 0 0;
+        margin: 0 40px;
+        grid-gap: 40px;
+
+        .resume-buyer {
+            .box-promotion {
+                height: 550px;
+                border-radius: 40px;
+                @include shandow;
+                overflow: hidden;
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+                padding:2px;
+                position: relative;
+                border: 2px solid $primary-color;
+
+                .img-container {
+                    position: absolute;
+                    top: -20px;
+                    right: -20px;
+                    transition: all .2s ease-in-out;
+                    width: 50%;
+                    img {
+                        width: 100%;
+                    }
+        
+                }
+                .text-container {
+                    margin-top: 25px;
+                    padding: 15px 50px 0 25px;
+                    line-height: 1;
+                    header {
+                        font-size: 1.7777777777777777rem;
+                    }
+                    .header-subtitle {
+                        display: block;
+                    }
+                }
+
+                .content-itens-resume {
+                    .title-resume {
+                        width: 100%;
+                        color: $primary-color;
+                        padding: 10px 20px;
+                        background-color: $second-color;
+                    }
+                }
+
+            }
+        }
+
+        .data-banks {
+            .content-check {
+                width: 100%;
+                padding: 0 20px;
+                border-top: solid 1px $second-color-variant;
+                border-bottom: solid 1px $second-color-variant;
+                padding: 15px;
+    
+                input {
+                    height: initial ;
+    
+                }
+    
+            }
+
+        }
+
     }
 }
