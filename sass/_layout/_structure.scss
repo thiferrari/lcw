@@ -85,10 +85,6 @@ ul.icons-stars {
     padding: 0;
     text-align: left;
 
-    @media (max-width: 991px) {
-        text-align: center;
-    }
-
     li {
         display: inline-block;
         margin: 0 2px;

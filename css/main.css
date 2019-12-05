@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'VAGRounded';
   src: url("../fonts/vrl__.eot");
@@ -248,12 +249,6 @@ ul.icons-stars {
   margin: 0;
   padding: 0;
   text-align: left;
-}
-
-@media (max-width: 991px) {
-  ul.icons-stars {
-    text-align: center;
-  }
 }
 
 ul.icons-stars li {
@@ -1035,6 +1030,12 @@ footer .footer-copyright p {
   display: block;
 }
 
+@media (max-width: 991px) {
+  #details-hotel .grid-details .text-details article p {
+    padding: 0;
+  }
+}
+
 #details-hotel .grid-details .text-details article .btn-select-room {
   color: #ff1e25;
   margin: 35px 0;
@@ -1122,14 +1123,34 @@ footer .footer-copyright p {
 
 #details-hotel .grid-details .sidebar-details .content-value .text-total {
   font-size: 32px;
-  color: #ff1e25;
+  color: #000000;
   float: left;
+  margin-top: 20px;
+}
+
+#details-hotel .grid-details .sidebar-details .content-value .text-total:before {
+  content: "Diária";
+  font-size: 19px;
+  position: absolute;
+  margin: -18px 0 0 0;
+  color: #000000;
 }
 
 #details-hotel .grid-details .sidebar-details .content-value .text-value {
+  margin-top: 20px;
   font-size: 28px;
   color: #000000;
   float: right;
+  text-align: left;
+}
+
+#details-hotel .grid-details .sidebar-details .content-value .text-value:before {
+  content: "total das diárias";
+  font-size: 19px;
+  position: absolute;
+  margin: -18px 0 0 -15px;
+  color: #ff1e25;
+  text-align: left;
 }
 
 #details-hotel .grid-details .sidebar-details .btn-book-room {
@@ -1439,6 +1460,12 @@ footer .footer-copyright p {
   display: block;
 }
 
+@media (max-width: 991px) {
+  #details-hotel .grid-details .text-details article p {
+    padding: 0;
+  }
+}
+
 #details-hotel .grid-details .text-details article .btn-select-room {
   color: #ff1e25;
   margin: 35px 0;
@@ -1526,14 +1553,34 @@ footer .footer-copyright p {
 
 #details-hotel .grid-details .sidebar-details .content-value .text-total {
   font-size: 32px;
-  color: #ff1e25;
+  color: #000000;
   float: left;
+  margin-top: 20px;
+}
+
+#details-hotel .grid-details .sidebar-details .content-value .text-total:before {
+  content: "Diária";
+  font-size: 19px;
+  position: absolute;
+  margin: -18px 0 0 0;
+  color: #000000;
 }
 
 #details-hotel .grid-details .sidebar-details .content-value .text-value {
+  margin-top: 20px;
   font-size: 28px;
   color: #000000;
   float: right;
+  text-align: left;
+}
+
+#details-hotel .grid-details .sidebar-details .content-value .text-value:before {
+  content: "total das diárias";
+  font-size: 19px;
+  position: absolute;
+  margin: -18px 0 0 -15px;
+  color: #ff1e25;
+  text-align: left;
 }
 
 #details-hotel .grid-details .sidebar-details .btn-book-room {

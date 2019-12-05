@@ -137,6 +137,9 @@
                     text-transform: initial;
                     padding: 0 120px 0 0;
                     display: block;
+                    @media (max-width: 991px) {
+                        padding: 0;
+                    }
                 }
                 .btn-select-room {
                     color: $primary-color;
@@ -219,14 +222,34 @@
                 display: block;
                 min-height: 100px;
                 .text-total {
+
                     font-size: 32px;
-                    color:$primary-color;
+                    color:$main-color;
                     float:left;
+                    margin-top: 20px;
+                    &:before {
+                        content:"Diária";
+                        font-size:19px;
+                        position: absolute;
+                        margin: -18px 0 0 0;
+                        color:$main-color;
+                    }
                 }
                 .text-value {
+                    margin-top: 20px;
                     font-size: 28px;
                     color:$main-color;
                     float: right;
+                    text-align: left;
+
+                    &:before {
+                        content:"total das diárias";
+                        font-size:19px;
+                        position: absolute;
+                        margin: -18px 0 0 -15px;
+                        color:$primary-color;
+                        text-align: left;
+                    }
                 }
             }
             .btn-book-room {
