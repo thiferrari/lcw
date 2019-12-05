@@ -1853,3 +1853,258 @@ footer .footer-copyright p {
     padding: 20px;
   }
 }
+
+#list-hotels header .container-header-internal {
+  width: 100%;
+}
+
+#list-hotels header .container-header-internal .header-full-internal {
+  height: 225px;
+  background-image: url(/img/header-internat-img.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  background-color: #ff1e25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#list-hotels header .container-header-internal .header-full-internal h1 {
+  font-size: 3.3333333333333335rem;
+  color: #ffffff;
+  width: 72%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 84px 0 0 0;
+}
+
+#list-hotels header .container-header-internal .header-full-internal h1 span {
+  font-size: 2.4444444444444446rem;
+  color: #ffffff;
+  display: block;
+}
+
+#list-hotels header .container-header-internal .header-search {
+  width: 65%;
+}
+
+#list-hotels header .container-header-internal .header-search input {
+  -webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.8);
+  box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.8);
+  z-index: 1;
+}
+
+#list-hotels header .container-header-internal .header-search button {
+  -webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.8);
+  box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.8);
+  z-index: 2;
+}
+
+#list-hotels h3 {
+  margin-top: 40px;
+}
+
+#list-hotels .home-custom-packages .grid-box {
+  padding: 150px 0 20px 0px;
+}
+
+#list-hotels .home-custom-packages .content-packages {
+  text-align: center;
+}
+
+#list-hotels .home-custom-packages .content-packages .box-packages {
+  min-height: 150px;
+}
+
+#list-hotels .home-custom-packages .content-packages .box-packages .text-container img.img-logo {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#list-hotels .home-custom-packages .content-packages .box-packages .text-container .text02 {
+  display: none;
+}
+
+#list-hotels .home-custom-packages .active-packages .box-packages {
+  background-color: #ff1e25;
+}
+
+#list-hotels .home-custom-packages .active-packages .title-packages {
+  display: block;
+}
+
+#list-hotels .home-custom-packages .title-packages {
+  display: none;
+  padding: 15px 0;
+}
+
+#list-hotels .hr {
+  width: 100%;
+  height: 2px;
+  background-color: #c8c8c8;
+  display: block;
+}
+
+#list-hotels .content-list-hotels {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#list-hotels .content-list-hotels .box-list {
+  width: 100%;
+  border-radius: 40px;
+  margin: 20px 0;
+  -webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
+  box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
+  position: relative;
+}
+
+#list-hotels .content-list-hotels .box-list .content-img-list {
+  width: 36%;
+  height: 300px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  overflow: hidden;
+  background-color: red;
+  position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  #list-hotels .content-list-hotels .box-list .content-img-list {
+    width: 100%;
+    position: relative;
+    display: block;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+#list-hotels .content-list-hotels .box-list .content-img-list img {
+  position: absolute;
+}
+
+#list-hotels .content-list-hotels .box-list .content-img-list img.img-bg-packages {
+  width: 100%;
+  height: 100%;
+}
+
+#list-hotels .content-list-hotels .box-list .container-list-details {
+  width: 64%;
+  position: absolute;
+  top: 0;
+  left: 36%;
+  padding: 40px 30px 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  #list-hotels .content-list-hotels .box-list .container-list-details {
+    width: 100%;
+    position: relative;
+    left: 0;
+    display: block;
+  }
+}
+
+#list-hotels .content-list-hotels .box-list .container-list-details header {
+  margin-bottom: 30px;
+}
+
+#list-hotels .content-list-hotels .box-list .container-list-details header h4 {
+  font-size: 43px;
+  line-height: 0.6;
+}
+
+@media only screen and (max-width: 991px) {
+  #list-hotels .content-list-hotels .box-list .container-list-details header h4 {
+    font-size: 38px;
+  }
+}
+
+#list-hotels .content-list-hotels .box-list .container-list-details header .text-address,
+#list-hotels .content-list-hotels .box-list .container-list-details header .text-city {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 991px) {
+  #list-hotels .content-list-hotels .box-list .container-list-details header .text-address,
+  #list-hotels .content-list-hotels .box-list .container-list-details header .text-city {
+    font-size: 16px;
+  }
+}
+
+#list-hotels .content-list-hotels .box-list .container-list-details header p {
+  padding: 0 46% 0 0;
+  display: block;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  #list-hotels .content-list-hotels .box-list .container-list-details header p {
+    padding: 0;
+    margin: 46px 0;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #list-hotels .content-list-hotels .box-list .container-list-details header p {
+    margin: 70px 0;
+    text-align: center;
+  }
+}
+
+#list-hotels .content-list-hotels .box-list .container-list-details .content-stars {
+  float: right;
+  position: absolute;
+  right: 40px;
+  top: 65px;
+}
+
+@media only screen and (max-width: 991px) {
+  #list-hotels .content-list-hotels .box-list .container-list-details .content-stars {
+    left: 40px;
+    top: 130px;
+    display: block;
+  }
+}
+
+#list-hotels .content-list-hotels .box-list .container-list-details .btn-book-room {
+  float: right;
+  margin: -25px 0 0 0;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  #list-hotels .content-list-hotels .box-list .container-list-details .btn-book-room {
+    margin: 0 auto;
+    display: block;
+    float: initial;
+  }
+}
