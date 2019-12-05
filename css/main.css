@@ -2055,6 +2055,14 @@ header .container-banners .header-search {
   height: 30px;
 }
 
+#checkout .box-booking-data .resume-buyer .content-value .text-total {
+  text-align: center;
+}
+
+#checkout .box-booking-data .resume-buyer .content-value .text-value {
+  text-align: center;
+}
+
 #checkout .box-booking-data .data-banks .content-check {
   width: 100%;
   padding: 0 20px;
