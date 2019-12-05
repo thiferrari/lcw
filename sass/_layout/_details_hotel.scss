@@ -137,6 +137,7 @@
                     text-transform: initial;
                     padding: 0 120px 0 0;
                     display: block;
+
                     @media (max-width: 991px) {
                         padding: 0;
                     }
@@ -227,6 +228,7 @@
                     color:$main-color;
                     float:left;
                     margin-top: 20px;
+                    
                     &:before {
                         content:"Diária";
                         font-size:19px;
