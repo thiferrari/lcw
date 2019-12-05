@@ -1,5 +1,5 @@
 // HEADER //
-#details-package {
+#details-hotel {
     header {
 
         .container-header-internal{
@@ -49,7 +49,7 @@
     }
 }
 
-#details-package {
+#details-hotel {
     h3 {
         margin-top: 40px;
     }
@@ -117,6 +117,12 @@
                 font-size:44px;
                 line-height: 1;
             }
+            .btn-select-room {
+                color: $primary-color;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
             .subtitle {
                 font-size:20px;
                 line-height: 0.4;
@@ -125,15 +131,17 @@
             p {
                 text-transform: initial;
                 padding: 0 120px 0 0;
+                display: block;
             }
         }
         .title-checklist {
-            position: absolute;
             color: $primary-color;
             background-color: $second-color;
             padding:10px 55px 10px 20px;
             border-top-right-radius: 40px;
             border-bottom-right-radius: 40px;
+            display: block;
+            margin:30px 0;
             span {
                 display: block;
                 text-transform: initial;
@@ -168,7 +176,7 @@
                 }
                 .content-text-details {
                     position: relative;
-                    top: 360px;
+                    top: 240px;
                     .see-more {
                         font-size:30px;
                         display: block;
