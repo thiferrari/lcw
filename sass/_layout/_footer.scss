@@ -1,6 +1,8 @@
 footer {
-    font-size: 1.111vw;
-
+    
+    font-size: 1rem;
+    margin: 40px 0 0 0;
+    
     .footer-container {
         display: flex;
         flex-wrap: wrap;
@@ -9,13 +11,16 @@ footer {
         min-height: 230px;
         .footer-links {
 
-            font-size: 1.111vw;
+            font-size: 1rem;
 
+            @media (max-width: 991px) {
+                padding: 0;
+            }
         }
         .footer-payment {
             width: 34%;
             h4 {
-                font-size: 1.111vw;
+                font-size: 1rem;
 
             }
         }
@@ -29,6 +34,11 @@ footer {
                 margin: 0;
                 padding: 0;
                 text-align: left;
+
+                @media (max-width: 991px) {
+                    text-align: center;
+
+                }
                 li {
                     display: inline-block;
                     margin: 0 10px;
@@ -55,6 +65,14 @@ footer {
                         }
                     }
                 }
+            }
+        }
+        @media (max-width: 991px) {
+            > div {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
             }
         }
     }
