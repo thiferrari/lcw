@@ -13,9 +13,12 @@ footer {
 
             font-size: 1rem;
 
-            @media (max-width: 991px) {
-                padding: 0;
+            ul {
+                @media only screen and (max-width: 991px) {
+                    padding: 0;
+                }
             }
+
         }
         .footer-payment {
             width: 34%;
@@ -23,10 +26,18 @@ footer {
                 font-size: 1rem;
 
             }
+            @media only screen and (max-width: 991px) {
+                margin: 30px 0;
+                width: 100%;
+            }
         }
         .footer-social {
+
+            @media only screen and (max-width: 991px) {
+                margin: 30px 0;
+            }
             h4 {
-                font-size: 1.111vw;
+                font-size: 1.2rem;
                 text-transform: none;
 
             }

@@ -167,7 +167,7 @@ body {
   font-size: 16px;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   html,
   body {
     font-size: 14px;
@@ -454,8 +454,8 @@ footer .footer-container .footer-links {
   font-size: 1rem;
 }
 
-@media (max-width: 991px) {
-  footer .footer-container .footer-links {
+@media only screen and (max-width: 991px) {
+  footer .footer-container .footer-links ul {
     padding: 0;
   }
 }
@@ -468,8 +468,21 @@ footer .footer-container .footer-payment h4 {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 991px) {
+  footer .footer-container .footer-payment {
+    margin: 30px 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  footer .footer-container .footer-social {
+    margin: 30px 0;
+  }
+}
+
 footer .footer-container .footer-social h4 {
-  font-size: 1.111vw;
+  font-size: 1.2rem;
   text-transform: none;
 }
 
@@ -1991,6 +2004,13 @@ header .container-banners .header-search {
   grid-gap: 40px;
 }
 
+@media only screen and (max-width: 991px) {
+  #checkout .box-booking-data {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
 #checkout .box-booking-data .resume-buyer .box-promotion {
   height: 550px;
   border-radius: 40px;
@@ -2055,12 +2075,22 @@ header .container-banners .header-search {
   height: 30px;
 }
 
-#checkout .box-booking-data .resume-buyer .content-value .text-total {
-  text-align: center;
+#checkout .box-booking-data .resume-buyer .box-promotion .content-value {
+  text-align: right;
+  padding: 10px 20px;
 }
 
-#checkout .box-booking-data .resume-buyer .content-value .text-value {
-  text-align: center;
+#checkout .box-booking-data .resume-buyer .box-promotion .content-value > span {
+  display: block;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .content-value .text-total {
+  font-size: 26px;
+  line-height: 1;
+}
+
+#checkout .box-booking-data .resume-buyer .box-promotion .content-value .text-value {
+  font-size: 22px;
 }
 
 #checkout .box-booking-data .data-banks .content-check {

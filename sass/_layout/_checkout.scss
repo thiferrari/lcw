@@ -48,6 +48,10 @@
         margin: 0 40px;
         grid-gap: 40px;
 
+        @media only screen and (max-width: 991px) {
+            grid-template-columns: 100%;
+        }
+
         .resume-buyer {
             .box-promotion {
                 height: 550px;
@@ -100,16 +104,23 @@
                         }
                     }
                 }
-            }
-            .content-value { 
 
-                .text-total {
-                    text-align: center;
-    
-                }
-                .text-value {
-                    text-align: center;
-    
+                .content-value { 
+
+                    text-align: right;
+                    padding: 10px 20px;
+                    & > span {
+                        display: block;
+                    }
+                    .text-total {
+                        font-size: 26px;
+                        line-height: 1;
+                    }
+                    .text-value {
+                        font-size: 22px;
+       
+                    }
+        
                 }
     
             }
