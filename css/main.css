@@ -2233,6 +2233,12 @@ header .container-banners .header-search {
   right: 0;
 }
 
+@media only screen and (max-width: 991px) {
+  #checkout .box-booking-data .data-banks .btn-confirm-payment {
+    bottom: -70px;
+  }
+}
+
 /* Create four equal columns that floats next to eachother */
 .column {
   float: left;
