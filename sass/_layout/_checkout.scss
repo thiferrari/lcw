@@ -36,7 +36,31 @@
     }
     .form-data {
         width: 60%;
-        margin: 65px auto 50px auto;
+        margin: 70px auto 140px auto;
+        position: relative;
+        .box-fields {
+            display: flex;
+            .ddd{
+                flex-basis: 35%;
+            }
+            .w100 {
+                margin-left: 15px;
+            }
+        }
+        .btn-data {
+            position: absolute;
+            bottom: -70px;
+            right: 0;
+
+            @media only screen and (max-width: 991px) {
+                display: block;
+                left: 0;
+                right: 0;
+            }
+        }
+        @media only screen and (max-width: 991px) {
+            width: 100%;
+        }
     }
     .box-booking-data {
 
@@ -53,8 +77,9 @@
         }
 
         .resume-buyer {
+            
             .box-promotion {
-                height: 550px;
+                height: 600px;
                 border-radius: 40px;
                 @include shandow;
                 overflow: hidden;
@@ -87,14 +112,18 @@
                     }
                 }
                 .content-itens-resume {
+
                     margin-top: 20px;
+
                     .title-resume {
+                        font-size: 20px;
                         width: 100%;
                         color: $primary-color;
                         padding: 10px 20px;
                         background-color: $second-color;
                     }
                     .form-row {
+                        margin: 10px 0;
                         padding: 0 20px;
                         label {
                             text-transform: initial;
@@ -109,6 +138,7 @@
 
                     text-align: right;
                     padding: 10px 20px;
+
                     & > span {
                         display: block;
                     }
@@ -124,23 +154,109 @@
                 }
     
             }
-
         }
 
         .data-banks {
+            
+            position: relative;
+
+            .payment-methods{
+
+                img {
+                    width: 60%;
+                }
+                .content-check-payment {
+                    width: 100%;
+                    border-top: solid 1px $second-color-variant;
+                    border-bottom: solid 1px $second-color-variant;
+                
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content:start;
+
+                    @media only screen and (max-width: 991px) {
+                    }
+
+                    .custom-control {
+            
+
+                        .custom-control-label {
+                            &:before,
+                            &:after {
+                                display: flex;
+                                -webkit-align-items: center;
+                                align-items: center;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+            
+                            }
+                        }
+
+                    }
+                    .checkbox {
+                        display: inline;
+                    }
+    
+                    input {
+                        height: initial ;
+        
+                    }
+        
+                }
+            }
+
+
+            .content-card-inputs {
+                margin: 40px 0;                
+                display: block;
+                
+            }
+            .box-fields {
+                display: flex;
+                .val{
+                    flex-basis: 45%;
+                }
+                .cod {
+                    margin-left: 25px;
+                    flex-basis: 25%;
+
+                }
+            } 
+            .title-terms {
+
+            }
             .content-check {
                 width: 100%;
-                padding: 0 20px;
-                border-top: solid 1px $second-color-variant;
                 border-bottom: solid 1px $second-color-variant;
-                padding: 15px;
-    
+                padding: 20px 0;
+                @media only screen and (max-width: 991px) {
+                    grid-template-columns: 100%;
+                }
+
+                .checkbox {
+                    display: inline;
+                }
+
                 input {
                     height: initial ;
     
                 }
+                span {
+                    font-size: 14px;
+                    text-transform: initial;
+                    display: block;
+                    margin-left: 25px;
+                }
     
             }
+     
+            .btn-confirm-payment {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+      
 
         }
 

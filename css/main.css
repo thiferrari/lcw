@@ -229,6 +229,7 @@ h3 {
   font-size: 23px;
   display: block;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -1990,7 +1991,43 @@ header .container-banners .header-search {
 
 #checkout .form-data {
   width: 60%;
-  margin: 65px auto 50px auto;
+  margin: 70px auto 140px auto;
+  position: relative;
+}
+
+#checkout .form-data .box-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#checkout .form-data .box-fields .ddd {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+}
+
+#checkout .form-data .box-fields .w100 {
+  margin-left: 15px;
+}
+
+#checkout .form-data .btn-data {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  #checkout .form-data .btn-data {
+    display: block;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #checkout .form-data {
+    width: 100%;
+  }
 }
 
 #checkout .box-booking-data {
@@ -2012,7 +2049,7 @@ header .container-banners .header-search {
 }
 
 #checkout .box-booking-data .resume-buyer .box-promotion {
-  height: 550px;
+  height: 600px;
   border-radius: 40px;
   -webkit-box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
   box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.4);
@@ -2057,6 +2094,7 @@ header .container-banners .header-search {
 }
 
 #checkout .box-booking-data .resume-buyer .box-promotion .content-itens-resume .title-resume {
+  font-size: 20px;
   width: 100%;
   color: #ff1e25;
   padding: 10px 20px;
@@ -2064,6 +2102,7 @@ header .container-banners .header-search {
 }
 
 #checkout .box-booking-data .resume-buyer .box-promotion .content-itens-resume .form-row {
+  margin: 10px 0;
   padding: 0 20px;
 }
 
@@ -2093,16 +2132,105 @@ header .container-banners .header-search {
   font-size: 22px;
 }
 
-#checkout .box-booking-data .data-banks .content-check {
+#checkout .box-booking-data .data-banks {
+  position: relative;
+}
+
+#checkout .box-booking-data .data-banks .payment-methods img {
+  width: 60%;
+}
+
+#checkout .box-booking-data .data-banks .payment-methods .content-check-payment {
   width: 100%;
-  padding: 0 20px;
   border-top: solid 1px #dedede;
   border-bottom: solid 1px #dedede;
-  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+#checkout .box-booking-data .data-banks .payment-methods .content-check-payment .custom-control .custom-control-label:before, #checkout .box-booking-data .data-banks .payment-methods .content-check-payment .custom-control .custom-control-label:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#checkout .box-booking-data .data-banks .payment-methods .content-check-payment .checkbox {
+  display: inline;
+}
+
+#checkout .box-booking-data .data-banks .payment-methods .content-check-payment input {
+  height: initial;
+}
+
+#checkout .box-booking-data .data-banks .content-card-inputs {
+  margin: 40px 0;
+  display: block;
+}
+
+#checkout .box-booking-data .data-banks .box-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#checkout .box-booking-data .data-banks .box-fields .val {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+#checkout .box-booking-data .data-banks .box-fields .cod {
+  margin-left: 25px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+#checkout .box-booking-data .data-banks .content-check {
+  width: 100%;
+  border-bottom: solid 1px #dedede;
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  #checkout .box-booking-data .data-banks .content-check {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+#checkout .box-booking-data .data-banks .content-check .checkbox {
+  display: inline;
 }
 
 #checkout .box-booking-data .data-banks .content-check input {
   height: initial;
+}
+
+#checkout .box-booking-data .data-banks .content-check span {
+  font-size: 14px;
+  text-transform: initial;
+  display: block;
+  margin-left: 25px;
+}
+
+#checkout .box-booking-data .data-banks .btn-confirm-payment {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Create four equal columns that floats next to eachother */

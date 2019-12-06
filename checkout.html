@@ -45,65 +45,77 @@
     </div>
     <div class="container"> 
       <div class="form-data">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label>Nome*</label>
-              <input type="text" class="form-control" placeholder="escreva seu nome">
-            </div>
-            <div class="form-group col-md-6">
-              <label>Sobrenome*</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="escreva seu sobrenome">
-            </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>Nome*</label>
+            <input type="text" class="form-control" placeholder="escreva seu nome">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label>CPF*</label>
-              <input type="text" class="form-control" placeholder="CPF">
-            </div>
-            <div class="form-group col-md-6">
-              <label>Data de nascimento</label>
-              <input type="text" class="form-control" placeholder="data de nascimento">
-            </div>
+          <div class="form-group col-md-6">
+            <label>Sobrenome*</label>
+            <input type="text" class="form-control" id="inputPassword4" placeholder="escreva seu sobrenome">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label>E-mail de contato</label>
-              <input type="email" class="form-control" placeholder="escreva seu e-mail">
-            </div>
-            <div class="form-group col-md-6">
-              <label>Confirme seu e-mail*</label>
-              <input type="email" class="form-control" placeholder="escreva seu e-mail">
-            </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>CPF*</label>
+            <input type="text" class="form-control" placeholder="CPF">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label >Endereço*</label>
-              <input type="text" class="form-control" placeholder="escreva aqui seu endereço">
-            </div>
-            <div class="form-group col-md-6">
-              <label >Endereço*</label>
-              <input type="text" class="form-control" placeholder="escreva aqui seu endereço">
-            </div>
+          <div class="form-group col-md-6">
+            <label>Data de nascimento</label>
+            <input type="text" class="form-control" placeholder="data de nascimento">
           </div>
-          <div class="form-group">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>E-mail de contato</label>
+            <input type="email" class="form-control" placeholder="escreva seu e-mail">
+          </div>
+          <div class="form-group col-md-6">
+            <label>Confirme seu e-mail*</label>
+            <input type="email" class="form-control" placeholder="escreva seu e-mail">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
             <label >Endereço*</label>
             <input type="text" class="form-control" placeholder="escreva aqui seu endereço">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label>CEP*</label>
-              <input type="text" class="form-control" placeholder="00000-00">
-            </div>
-            <div class="form-group col-md-4">
-                <label>Cidade*</label>
-                <input type="text" class="form-control" placeholder="sua cidade">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Estado*</label>
-              <input type="text" class="form-control" placeholder="SP">
-            </div>
+          <div class="form-group col-md-6">
+            <label >Endereço*</label>
+            <input type="text" class="form-control" placeholder="escreva aqui seu endereço">
           </div>
-          <button type="submit" class="btn">Enviar Dados</button>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+              <label>Telefone/Celular*</label>
+              <div class="box-fields">
+                  <input class="form-control ddd" placeholder="DDD" id="intDdd" maxlength="2">
+                  <input class="form-control w100" placeholder="____-____" id="intCelular" maxlength="10">
+              </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label >Endereço*</label>
+          <input type="text" class="form-control" placeholder="escreva aqui seu endereço">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label>CEP*</label>
+            <input type="text" class="form-control" placeholder="00000-000">
+          </div>
+          <div class="form-group col-md-4">
+              <label>Cidade*</label>
+              <input type="text" class="form-control" placeholder="sua cidade">
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Estado*</label>
+            <input type="text" class="form-control" placeholder="SP">
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn btn-data">Enviar Dados</button>
+        </div>
       </div>
     </div>
 
@@ -111,82 +123,104 @@
       <h3>Dados da reserva</h3>
       <div class="box-booking-data">
         <div class="resume-buyer">
-
-            <div class="box-promotion">
-              <div class="img-container">
-                <img src="/img/promotion-img.png" alt="" title="" class="">
-              </div>
-              <div class="text-container">
-                <header>las vegas U$985,00</header>
-                <span class="header-subtitle">3 noites | 4 Adultos</span>
-                <span class="text02">Hotel</span>
-              </div>
-              <div class="content-itens-resume">
-                <div class="title-resume">Período da viagem:</div>
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label>Ida</label>
+          <div class="box-promotion">
+            <div class="img-container">
+              <img src="/img/promotion-img.png" alt="" title="" class="">
+            </div>
+            <div class="text-container">
+              <header>las vegas U$985,00</header>
+              <span class="header-subtitle">3 noites | 4 Adultos</span>
+              <span class="text02">Hotel</span>
+            </div>
+            <div class="content-itens-resume">
+              <div class="title-resume">Período da viagem:</div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label>Ida</label>
+                  <input type="text" class="form-control" placeholder="00/00/0000" disabled>
+                </div>
+                <div class="form-group col-md-12">
+                    <label>Volta</label>
                     <input type="text" class="form-control" placeholder="00/00/0000" disabled>
                   </div>
-                  <div class="form-group col-md-12">
-                      <label>Volta</label>
-                      <input type="text" class="form-control" placeholder="00/00/0000" disabled>
-                    </div>
-                </div>
-                <div class="title-resume">Período da viagem:</div>
-                <div class="form-row">
-                  <div class="form-group col-md-12">
-                    <label for="inputPassword4">Pacote:</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="1" disable>
-                  </div>
+              </div>
+              <div class="title-resume">Período da viagem:</div>
+              <div class="form-row">
+                
+                <div class="form-group col-md-12">
+                  <label>Pacote:</label>
+                  <input type="password" class="form-control" placeholder="1" disabled>
                 </div>
               </div>
-              <div class="content-value">
-                  <span class="text-total">Total:</span>
-                  <span class="text-value">R$ 8.000,00</span>
-                </div>
             </div>
-
-         </div>
+            <div class="content-value">
+                <span class="text-total">Total:</span>
+                <span class="text-value">R$ 8.000,00</span>
+              </div>
+          </div>
+        </div>
         <div class="data-banks">
           <div class="payment-methods">
             <h5>Formas de Pagamento</h5>
+
+            <div class="content-check-payment">
+
+              <div class="custom-control custom-radio">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                <label class="custom-control-label" for="customcontrolvalidation1" ></label>
+              </div>
+
+              <div class="custom-control custom-radio">
+                <input type="checkbox" class="custom-control-input" id="customControlValidation2" required>
+                <label class="custom-control-label" for="customControlValidation2"></label>
+              </div>              
+
+            </div>
+
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <div class="content-card-inputs">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label>Nome Impresso no cartão</label>
+                <input type="text" class="form-control" placeholder="Nome Impresso no cartão">
+              </div>
+              <div class="form-group col-md-6">
+                <label>Numero do cartão</label>
+                <input type="text" class="form-control" placeholder="Numero do cartão">
+              </div>
             </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                  <label>Válidade / COD*</label>
+                  <div class="box-fields">
+                    <input class="form-control val" placeholder="" id="intDdd" maxlength="2">
+                    <input class="form-control cod" placeholder="" id="intCelular" maxlength="10">
+                  </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          <span class="title-terms">Termos e condições</span>
+          <div class="content-check">
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation3">Salvar cartão para próxima compra</label>
             </div>
           </div>
           <div class="content-check">
-            <div class="checkbox">
-              <input type="checkbox" id="a" checked>
-              <label for="a"></label>
-              <span>Salvar cartão para a próxima compra</span>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation4">Termos de uso</label>
+              <span>Li e estou de acordo com os termos de uso...</span>
             </div>
           </div>
-          <div class="content-check">
-            <div class="checkbox">
-              <input type="checkbox" id="a" checked>
-              <label for="a"></label>
-              <span>Termos de uso</span>
-            </div>
-          </div>
+          <button type="submit" class="btn btn-confirm-payment">Confirmar Pagamento</button>
+
         </div>
+
       </div>
     </div>
 
