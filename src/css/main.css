@@ -365,19 +365,10 @@ ul.icons-stars li a .icon:hover {
   border: 1px solid #eb5757;
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: background-color 300ms ease, 
- colour 300ms ease,
- -webkit-box-shadow 300ms ease;
-  transition: background-color 300ms ease, 
- colour 300ms ease,
- -webkit-box-shadow 300ms ease;
-  transition: background-color 300ms ease, 
- colour 300ms ease,
- box-shadow 300ms ease;
-  transition: background-color 300ms ease, 
- colour 300ms ease,
- box-shadow 300ms ease, 
- -webkit-box-shadow 300ms ease;
+  -webkit-transition: background-color 300ms ease,  colour 300ms ease, -webkit-box-shadow 300ms ease;
+  transition: background-color 300ms ease,  colour 300ms ease, -webkit-box-shadow 300ms ease;
+  transition: background-color 300ms ease,  colour 300ms ease, box-shadow 300ms ease;
+  transition: background-color 300ms ease,  colour 300ms ease, box-shadow 300ms ease,  -webkit-box-shadow 300ms ease;
 }
 
 .checkbox label:after {
